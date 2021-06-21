@@ -9,13 +9,18 @@ body {
     zoom: 1;
     clear: both;
     overflow-x: hidden;
-    overflow-y: scroll;   
-    background-color: #5B8767;
+    overflow-y: scroll;
+    background-color: #5b8767;
 }
-::-webkit-scrollbar { width: 5px; /*스크롤바의 너비*/ } 
-::-webkit-scrollbar-thumb { background-color: black; /*스크롤바의 색상*/ } 
-::-webkit-scrollbar-track { background-color: yellow; /*스크롤바 트랙 색상*/ }
-
+::-webkit-scrollbar {
+    width: 5px; /*스크롤바의 너비*/
+}
+::-webkit-scrollbar-thumb {
+    background-color: black; /*스크롤바의 색상*/
+}
+::-webkit-scrollbar-track {
+    background-color: yellow; /*스크롤바 트랙 색상*/
+}
 
 #navbar {
     width: 100%;
@@ -43,14 +48,14 @@ body {
     background-color: #298640;
 }
 
-.writinglogo{
+.writinglogo {
     padding-left: 12px;
 }
 .navbar_items {
     display: flex;
 }
 
-.navbar_items a{
+.navbar_items a {
     padding: 4px 11px;
     border: 2px solid rgb(153, 97, 196);
     background-color: rgb(147, 124, 165);
@@ -81,46 +86,47 @@ body {
     white-space: nowrap;
 }
 
-.recommend th{
-    border: 2px solid #3A3532;
+.recommend th {
+    border: 2px solid #3a3532;
 
     padding: 10px 10px;
     width: 100%;
-    background-color: #DAD5D2;;
+    background-color: #dad5d2;
 }
 .RentO {
     margin: 30px 30px;
-    border: 3px solid #3A3532;
+    border: 3px solid #3a3532;
 
     font-size: 20px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    width: 300px;
 }
-.RentO th{
-    border: 2px solid #3A3532;
+.RentO th {
+    border: 2px solid #3a3532;
 
     padding: 10px 10px;
     width: 100%;
-    background-color: #DAD5D2;;
+    background-color: #dad5d2;
 }
 footer {
     box-sizing: border-box;
     position: relative;
-    
+
     background-color: #85c598;
     padding-top: 10px;
     bottom: 0;
     font-size: 3px;
-    color:rgb(255, 255, 255)
+    color: rgb(255, 255, 255);
 }
 .footer_git {
     padding-right: 0px;
 }
-footer ul{ 
+footer ul {
     float: right;
 }
-footer a{
+footer a {
     padding-right: 10px;
     padding-bottom: 10px;
     color: rgb(255, 255, 255);
@@ -133,40 +139,84 @@ footer a{
     padding-bottom: 10px;
 }
 
-.login{
-    display:flex;
+.login {
+    display: flex;
     flex-direction: column;
     width: 70%;
-    
 }
-.find_info{
+.find_info {
     margin-top: 15px;
 }
 
-.find_info a, .bar{
+.find_info a,
+.bar {
     color: rgb(148, 147, 147);
     font-size: 10px;
 }
 
-.bar{
-    margin : 0 1.5px;
+.bar {
+    margin: 0 1.5px;
 }
 
-.login input{
-    margin-top:25px;
-    border:3px solid #E6E23C;
+.login input {
+    margin-top: 25px;
+    border: 3px solid #e6e23c;
     border-radius: 10px;
-    height:35px;
+    height: 35px;
 }
 
-.login input:focus{
+.login input:focus {
     outline: none;
 }
 
-.login_BTN{
-   border:3px solid gray !important;
+.login_BTN {
+    border: 3px solid gray !important;
 }
 
-.RentO{
-    justify-content: space-between;
+.contain_rent {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contain_rent_box {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.preview_scooter {
+    max-width: 50%;
+    width: 500px;
+    border: 5px solid #e6e23c;
+}
+
+#rent_contain {
+    max-width: 100vw;
+    width: 80%;
+}
+
+.rent_info {
+    margin: 0 30px;
+    border: 3px solid #3a3532;
+    font-size: 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 300px;
+}
+
+.rent_info th {
+    border: 2px solid #3a3532;
+
+    padding: 10px 10px;
+    width: 100%;
+    background-color: #dad5d2;
+}
+
+.submit {
+    display: block;
+    margin: 0 auto;
 }
